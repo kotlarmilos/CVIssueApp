@@ -1,10 +1,15 @@
 ## Run the app
-1. Clear the cache:
+1. Clean build:
+```
+rm -rf CVIssueApp/obj CVIssueApp/bin
+```
+
+2. Clear the cache:
 ```
 dotnet nuget locals --clear all
 ```
 
-2. Build and run the app:
+3. Build and run the app:
 ```
 dotnet build -t:Run -f net9.0-ios -p:RuntimeIdentifier=ios-arm64
 ```
